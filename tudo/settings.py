@@ -130,3 +130,9 @@ MAX_QUANTITY_ALLOWED_PER_ORDER = '2'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        
+     ],
+}

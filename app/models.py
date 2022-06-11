@@ -48,7 +48,7 @@ class Commodity(models.Model):
     todays_price=models.FloatField(null=True)
     offer_price=models.FloatField(null=True)
     measuring_unit=models.CharField(null=False,max_length=100, default='Kg(s)', choices=MEASURING_UNITS)
-    # discounted_price=models.FloatField(null=True)
+    discounted_price=models.FloatField(null=True)
     bulk_price=models.FloatField(null=True,blank=True)
     bulk_qty=models.FloatField(null=True,blank=True)
     available_quantity=models.FloatField(null=True)
